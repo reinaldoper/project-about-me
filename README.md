@@ -53,4 +53,4 @@ Este é um projeto de portfólio que exibe informações sobre minhas experiênc
 
 
 ### Contato
-- Para mais informações, entre em contato pelo e-mail: seu-email@example.com
+- Para mais informações, entre em contato pelo e-mail: reinaldo-pereira@impulso.network
