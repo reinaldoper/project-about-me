@@ -239,3 +239,10 @@ body {
   .scroll-button:hover {
     background-color: #555;
   }
+
+  .custom-hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 20px 0;
+  }

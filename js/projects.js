@@ -3,6 +3,7 @@ import data from "../datas/dataProjetos.js";
 const eu = new URL('../images/image/eu.png', import.meta.url).href;
 import footer from "../datas/footer.js";
 import createScrollButtons from "../datas/createScrollButtons.js";
+import aboutMe from "../datas/aboutMe.js";
 
 
 const aboutMeImg = () => {
@@ -17,6 +18,12 @@ const aboutMeImg = () => {
 function renderProjects() {
   createScrollButtons();
   aboutMeImg();
+  aboutMe();
+  
+  const hr = document.createElement('hr');
+  hr.classList.add('custom-hr');
+  document.body.appendChild(hr);
+
   const projectsContainer = document.createElement('div');
   projectsContainer.classList.add('projects-container');
 

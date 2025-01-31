@@ -4,6 +4,7 @@ import experiences from "../datas/experiences.js";
 const eu = new URL('../images/image/eu.png', import.meta.url).href;
 import footer from "../datas/footer.js";
 import createScrollButtons from "../datas/createScrollButtons.js";
+import aboutMe from "../datas/aboutMe.js";
 
 
 const aboutMeImg = () => {
@@ -18,12 +19,11 @@ function renderExperiences() {
   createNavbar();
   createScrollButtons();
   aboutMeImg();
-  const aboutMe = document.createElement('div');
-  aboutMe.classList.add('about-me');
-  aboutMe.innerHTML = `I'm a passionate web developer with a love for creating beautiful and functional websites. 
-I'm always eager to learn new technologies and improve my skills. 
-I'm currently studying web development and looking for a job in the field.`;
-  document.body.appendChild(aboutMe);
+  aboutMe();
+
+  const hr = document.createElement('hr');
+  hr.classList.add('custom-hr');
+  document.body.appendChild(hr);
 
   const experiencesContainer = document.createElement('div');
   experiencesContainer.classList.add('experiences-container');
